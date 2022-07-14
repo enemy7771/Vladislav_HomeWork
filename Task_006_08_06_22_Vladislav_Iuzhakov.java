@@ -22,10 +22,10 @@ public class Task_006_08_06_22_Vladislav_Iuzhakov {
 
     //Метод который позволяет нам считывать с клавиатуры любую строку
     public static String stringScanner(String str){
-        Scanner scanner = new Scanner(System.in);
-        str = scanner.nextLine();
-        scanner.close();
-        return str;
+        Scanner scanner = new Scanner(System.in);//Создаём обьект класса Scanner
+        str = scanner.nextLine();//считываем строку
+        scanner.close();// закрываем scanner
+        return str;// возвращаем полученную строку
     }
 
     //Метод при помощи которого будем разворачивать строку
