@@ -14,9 +14,14 @@ public class Task_08_5_Vladislav_Iuzhakov {
     public static void main(String[] args) {
         Student student = new Student("Vlad", "Iuzhakov", "5", 4);
         student.getStipendia();
-        Student.Aspirant aspirant = new Student.Aspirant("HNJKF", "fsgb", "fmskl", 5, "fmmfslm");
-        aspirant.getStipendiaForAspirant();
-
+        Student.Aspirant aspirant1 = new Student.Aspirant("HNJKF", "fsgb", "fmskl", 5, "fmmfslm");
+        Student.Aspirant aspirant2 = new Student.Aspirant("Igor", "Melkozyorov", "6", 4, "Мир. Труд. Май");
+        aspirant1.getStipendiaForAspirant();
+        System.out.println();
+        Student[] studentsArray = {student , aspirant1, aspirant2};
+        studentsArray[0].getStipendia();
+        studentsArray[1].getStipendiaForAspirant();
+        studentsArray[2].getStipendiaForAspirant();
 
     }
 
